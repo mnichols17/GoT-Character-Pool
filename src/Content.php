@@ -34,7 +34,7 @@ class Content
         }
 
         foreach($entries as $entry => $points) {
-            echo("<tr><td><a href='src/user.php?entry=" . $entry . "'>" . $entry . "</a></td><td>" . $points . "</td></tr>");
+            echo("<tr><td><a href='../src/user.php?entry=" . $entry . "'>" . $entry . "</a></td><td>" . $points . "</td></tr>");
         }
     }
 
