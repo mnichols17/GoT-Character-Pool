@@ -4,7 +4,7 @@ include("../inc/header.php");
 require("Content.php");
 $content = new Content();
 ?>
-        <div class="card mx-auto my-2 p-3" style="width:80%;">
+        <div class="card mx-auto my-2 p-3" style="width:90%;">
             <div class="container content">
                 <div class="row mt-2">
                     <h4>As of the start of Season 8:</h4>
