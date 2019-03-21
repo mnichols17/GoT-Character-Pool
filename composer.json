@@ -1,0 +1,10 @@
+{
+    "name": "michaelnichols/go-t-character-pool",
+    "authors": [
+        {
+            "name": "Mike",
+            "email": "mike.nichols97@gmail.com"
+        }
+    ],
+    "require": {}
+}

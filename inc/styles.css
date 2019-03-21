@@ -1,0 +1,19 @@
+body {
+    background: gray;
+    font-family: 'Roboto', sans-serif;
+}
+.alive {
+    background: #00cc00;
+}
+.dead {
+    background: darkred;
+}
+.unknown {
+    background: darkgray;
+}
+.card {
+    background: beige;
+}
+td {
+    background: white;
+}
