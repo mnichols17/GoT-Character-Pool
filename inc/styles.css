@@ -1,5 +1,5 @@
 body {
-    background: gray;
+    background: #ededed;
     font-family: 'Roboto', sans-serif;
 }
 .alive {
@@ -8,12 +8,22 @@ body {
 .dead {
     background: darkred;
 }
+.ww {
+    background: aqua;
+}
 .unknown {
     background: darkgray;
 }
-.card {
-    background: beige;
-}
 td {
     background: white;
+}
+.content {
+    width: 50%;
+    background: #cbcab6;
+    border: 1px solid black;
+}
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 90%;
+    }
 }

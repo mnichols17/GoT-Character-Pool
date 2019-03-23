@@ -12,7 +12,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="../src/index.php">GoT Testing</a>
+            <a class="navbar-brand" href="../src/index.php">Game of Thrones Character Pool</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,9 +21,6 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="../src/status.php">Status</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Data</a>
                     </li>
                 </ul>
             </div>
