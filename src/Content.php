@@ -77,7 +77,7 @@ class Content
 
         foreach($entry as $key => $value) {
             if($value != "Alive" && $value != "Dead" && $value != "WW"){
-                $html .= "<tr><td scope=\"row\">" . $key . "</td><td class='unknown'>" . $value . "</td></tr>";
+                $html .= "<tr><td style='width:80%;' scope=\"row\">" . $key . "</td><td class='unknown'>" . $value . "</td></tr>";
             } else {
                 $html .= "<tr><td scope=\"row\">" . $key . "</td><td class='" . strtolower($value) . "'>" . $value . "</td></tr>";
             }
