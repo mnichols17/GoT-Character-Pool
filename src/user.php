@@ -9,7 +9,7 @@ $a = $content::getEntry($entry)
         <div class="content card mx-auto my-2 p-3">
             <div class="container">
                 <div class="row mt-2">
-                    <h4>Name: <?php echo ucwords($entry); ?><br>Points: <?php echo($a[1]); ?></h4>
+                    <h4><?php echo ucwords($entry); ?><br>Points: <?php echo($a[1]); ?></h4>
                 </div>
                 <div class="row">
                     <table class="table table-bordered table-sm mx-auto">

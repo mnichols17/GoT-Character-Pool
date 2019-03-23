@@ -18,6 +18,10 @@ class Content
         $correct = 0;
         foreach($answers as $q => $a) {
             if($data->$q == $a) {
+                if (strpos($q, '4') == true) {
+                    $correct += 4;
+                    continue;
+                }
                 $correct++;
             }
         }
@@ -43,11 +47,13 @@ class Content
 
     public static function ranker($entries) {
 
-        for($i = 1; $i < sizeof($entries); $i++){
-            if($entries[$i][1] > $entries[$i-1][1]){
-                $temp = $entries[$i];
-                $entries[$i] = $entries[$i-1];
-                $entries[$i-1] = $temp;
+       for($i = 1; $i < sizeof($entries); $i++) {
+            for($j = 0; $j < sizeof($entries); $j++) {
+                if($entries[$i][1] > $entries[$j][1]){
+                    $temp = $entries[$i];
+                    $entries[$i] = $entries[$j];
+                    $entries[$j] = $temp;
+                }
             }
         }
         return $entries;
@@ -70,15 +76,12 @@ class Content
         $html = "";
 
         foreach($entry as $key => $value) {
-            if($value == "Alive") {
-                $html .= "<tr><td scope=\"row\">" . $key . "</td><td class='alive'>" . $value . "</td></tr>";
-            } else if($value == "") {
-                $html .= "<tr></tr><td scope=\"row\">" . $key . "</td><td class='unknown'>Unknown</td></tr>";
+            if($value != "Alive" && $value != "Dead" && $value != "WW"){
+                $html .= "<tr><td scope=\"row\">" . $key . "</td><td class='unknown'>" . $value . "</td></tr>";
             } else {
-                $html .= "<tr><td scope=\"row\">" . $key . "</td><td class='dead'>" . $value . "</td></tr>";
+                $html .= "<tr><td scope=\"row\">" . $key . "</td><td class='" . strtolower($value) . "'>" . $value . "</td></tr>";
             }
         }
-
         return $html;
     }
 }

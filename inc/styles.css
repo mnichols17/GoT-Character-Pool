@@ -8,6 +8,9 @@ body {
 .dead {
     background: darkred;
 }
+.ww {
+    background: aqua;
+}
 .unknown {
     background: darkgray;
 }
