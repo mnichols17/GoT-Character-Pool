@@ -22,6 +22,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../src/status.php">Status</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../src/status.php">Link to the form</a>
+                    </li>
                 </ul>
             </div>
         </nav>

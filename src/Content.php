@@ -1,14 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: michaelnichols
- * Date: 2019-03-20
- * Time: 03:55
- */
+require('Data.php');
 
 class Content
 {
     public static function createData() {
+        $d = new Data();
+        $d::getJSON();
+
         $url = '../data/entries.json';
         $data = file_get_contents($url);
         return(json_decode($data));
