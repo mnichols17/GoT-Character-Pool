@@ -5,7 +5,7 @@ class Content
 {
     public static function createData() {
         $d = new Data();
-        $d::getJSON();
+        $d::CSVtoJSON();
 
         $url = '../data/entries.json';
         $data = file_get_contents($url);
