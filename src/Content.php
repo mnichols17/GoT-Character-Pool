@@ -3,7 +3,7 @@ require('Data.php');
 
 class Content
 {
-    public static function createData() {
+    private static function createData() {
         $d = new Data();
         $d::CSVtoJSON();
 
@@ -12,7 +12,7 @@ class Content
         return(json_decode($data));
     }
 
-    public static function getPoints($answers, $data): int {
+    private static function getPoints($answers, $data): int {
         $correct = 0;
         foreach($answers as $q => $a) {
             if($data->$q == $a) {
@@ -43,7 +43,7 @@ class Content
         }
     }
 
-    public static function ranker($entries) {
+    private static function ranker($entries) {
 
        for($i = 1; $i < sizeof($entries); $i++) {
             for($j = 0; $j < sizeof($entries); $j++) {
@@ -70,7 +70,7 @@ class Content
         return array($html, self::getPoints($jso->answers,$jso->$entry));
     }
 
-    public static function charTable($entry) {
+    private static function charTable($entry) {
         $html = "";
 
         foreach($entry as $key => $value) {
