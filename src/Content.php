@@ -21,6 +21,7 @@ class Content
                     continue;
                 }
                 $correct++;
+                //console.log(); fix the point system
             }
         }
         return $correct;
