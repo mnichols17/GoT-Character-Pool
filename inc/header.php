@@ -20,10 +20,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../src/status.php">Status</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://docs.google.com/forms/d/1G_rky5nl9W21v8xDGZ9w8TSPl7eLKpDBlY14T1rE0rU/edit?edit_requested=true">Link to the form</a>
+                        <a class="nav-link" href="../src/status.php">Character Status</a>
                     </li>
                 </ul>
             </div>
